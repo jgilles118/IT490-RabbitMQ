@@ -26,6 +26,7 @@ if($type == "Login")    {
         $_SESSION["username"] = $u;
         $_SESSION["password"] = $p;
         $_SESSION["type"] = $type;
+	$_SESSION["message"] = "Member Login attempt";
 	//RMQ message
 	 header("refresh:1; url = 'djmvClient.php'"); }
 
