@@ -3,7 +3,11 @@
 error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 ini_set('display_errors', 1);
 
+//Access to RMQ
+include("djmvClient.php");
+include("vmdajClient.php");
 
+//registration.html
 $username = $_POST["Username"];
 $password = $_POST["Password"];
 $name = $_POST["Name"];
