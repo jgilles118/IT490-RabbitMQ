@@ -26,6 +26,7 @@ if($type == "Login")    {
         $_SESSION["username"] = $u;
         $_SESSION["password"] = $p;
         $_SESSION["type"] = $type;
+	//RMQ message
 	 header("refresh:1; url = 'djmvClient.php'"); }
 
 $con = mysqli_connect($host, $user, $pass, $dbase);
@@ -34,11 +35,15 @@ $con = mysqli_connect($host, $user, $pass, $dbase);
         $rows = mysqli_num_rows($q);
 
         if($rows==1) {  $_SESSION["message"]= "Access GRANTED";
+		      	//RMQ message
                          header("refresh:1; url = 'vmdajClient.php'");
+		      	//Access to API
 			header("refresh:1; url = 'http://api2.bigoven.com'");    }
                                 
 	else {	 $_SESSION["message"]= "Not A Member";
-                 header("refresh:1; url = 'djmvClient.php'"); 
+	      	//RMQ message
+                 header("refresh:1; url = 'djmvClient.php'");
+	      	//Redirect back to Registation page
                  $url = "register.html";
                  header ("refresh:2; url =$url");  }
 
