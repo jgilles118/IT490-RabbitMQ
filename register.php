@@ -1,6 +1,5 @@
 <?php
 
-
 error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 ini_set('display_errors', 1);
 
@@ -10,13 +9,12 @@ $password = $_GET["Password"];
 $name = $_GET["Name"];
 $email = $_GET["Email"];
 
-header("refresh:1; url = 'djmvClient.php'");
-
         //Session incase user,password,type needed elsewhere 
         $_SESSION["username"] = $username;
         $_SESSION["password"] = $password;
         $_SESSION["message"] = "Newby";
-
+	//RMQ message
+	header("refresh:1; url = 'djmvClient.php'");
 
 
 $host = "localhost";
