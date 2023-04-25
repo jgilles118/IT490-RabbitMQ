@@ -64,7 +64,7 @@ Open a new browser tab and type into the url: localhost/blog.html
 This will allow the user the ability to see transactions through RabbitMQ. 
 
 
-
+# Welcome Back!!!!
 
 
 	
