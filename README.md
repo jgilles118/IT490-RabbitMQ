@@ -9,8 +9,8 @@ THE sudo commands are all performed in the terminal:
 ``` bash
 sudo apt-get install neovim
 sudo apt-get install aptitude
-sudo apt-get install apache2
-sudo apt-get install php7.0 libapache2-mod-php7.0
+sudo apt-get install php7.0 
+sudo apt-get install apache2 libapache2-mod-php7.0
 sudo apt-get install git
 sudo apt-get install mysql-server
 sudo apt-get install rabbitmq-server
