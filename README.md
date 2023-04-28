@@ -1,4 +1,5 @@
-# IT490-RabbitMQ
+# IT490-RabbitMQ 
+## Inital Project: January - May 2018
 
 Setup RabbitMQ onto Ubuntu Linux
 
@@ -71,7 +72,6 @@ Open a new browser tab and type into the url: localhost/blog.html
 This will allow the user the ability to see transactions through RabbitMQ. 
 
 
-# Welcome Back!!!!
-
+Date modified: April 28, 2023
 
 	
